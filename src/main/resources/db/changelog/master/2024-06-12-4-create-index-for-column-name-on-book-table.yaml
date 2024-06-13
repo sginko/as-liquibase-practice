@@ -1,0 +1,16 @@
+databaseChangeLog:
+  -  changeSet:
+       id: create-index-for-column-name
+       author: Sergi
+       changes:
+         - createIndex:
+             clustered: true
+             columns:
+               - column:
+                   descending:  true
+                   name:  name
+             indexName:  idx_name
+             schemaName:  public
+             tableName:  books
+#             tablespace:  A String
+             unique:  true

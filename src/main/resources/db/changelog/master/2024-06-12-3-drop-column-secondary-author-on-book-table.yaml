@@ -1,0 +1,10 @@
+databaseChangeLog:
+  -  changeSet:
+       id: drop-Column-secondary_author
+       author: Sergi
+       changes:
+         -  dropColumn:
+              columns:
+                -  column:
+                     name:  secondary_author
+              tableName:  books

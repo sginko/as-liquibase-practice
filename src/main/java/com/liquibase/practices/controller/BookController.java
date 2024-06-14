@@ -1,9 +1,8 @@
 package com.liquibase.practices.controller;
 
+import com.liquibase.practices.model.BookDto.BookRequestDto;
 import com.liquibase.practices.model.service.BookService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/books")
@@ -14,8 +13,13 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @GetMapping
-    private void getAllBooks(){
+    @PostMapping
+    public void addBook(@RequestBody BookRequestDto requestDto){
+        bookService.addBook(requestDto);
+    }
 
+    @GetMapping
+    public void getAllBooks(){
+        bookService.findAllBooks();
     }
 }

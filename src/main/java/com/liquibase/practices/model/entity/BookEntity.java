@@ -16,4 +16,9 @@ public class BookEntity {
 
     private String name;
     private String isbn;
+
+    public BookEntity(String name, String isbn) {
+        this.name = name;
+        this.isbn = isbn;
+    }
 }

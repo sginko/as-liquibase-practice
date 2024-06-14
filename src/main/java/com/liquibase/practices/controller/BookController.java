@@ -2,6 +2,7 @@ package com.liquibase.practices.controller;
 
 import com.liquibase.practices.model.bookDto.BookRequestDto;
 import com.liquibase.practices.model.bookDto.BookResponseDto;
+import com.liquibase.practices.model.projection.BookProjection;
 import com.liquibase.practices.model.service.BookService;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,4 +26,5 @@ public class BookController {
     public List<BookResponseDto> findAllBooks(){
         return bookService.findAllBooks();
     }
+
 }

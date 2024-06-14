@@ -1,4 +1,4 @@
-package com.liquibase.practices.model.BookDto;
+package com.liquibase.practices.model.bookDto;
 
 import lombok.AccessLevel;
 import lombok.Getter;

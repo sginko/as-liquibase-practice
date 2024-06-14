@@ -1,9 +1,11 @@
 package com.liquibase.practices.model.mapper;
 
-import com.liquibase.practices.model.BookDto.BookRequestDto;
-import com.liquibase.practices.model.BookDto.BookResponseDto;
+import com.liquibase.practices.model.bookDto.BookRequestDto;
+import com.liquibase.practices.model.bookDto.BookResponseDto;
 import com.liquibase.practices.model.entity.BookEntity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BookMapper {
 
     public BookResponseDto fromEntity(BookEntity entity){

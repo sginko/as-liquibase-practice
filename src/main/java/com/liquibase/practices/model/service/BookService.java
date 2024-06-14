@@ -1,7 +1,7 @@
 package com.liquibase.practices.model.service;
 
-import com.liquibase.practices.model.BookDto.BookRequestDto;
-import com.liquibase.practices.model.BookDto.BookResponseDto;
+import com.liquibase.practices.model.bookDto.BookRequestDto;
+import com.liquibase.practices.model.bookDto.BookResponseDto;
 
 import java.util.List;
 

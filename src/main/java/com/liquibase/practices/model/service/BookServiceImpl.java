@@ -1,8 +1,7 @@
 package com.liquibase.practices.model.service;
 
-import com.liquibase.practices.model.BookDto.BookRequestDto;
-import com.liquibase.practices.model.BookDto.BookResponseDto;
-import com.liquibase.practices.model.entity.BookEntity;
+import com.liquibase.practices.model.bookDto.BookRequestDto;
+import com.liquibase.practices.model.bookDto.BookResponseDto;
 import com.liquibase.practices.model.mapper.BookMapper;
 import com.liquibase.practices.model.repository.BookRepository;
 import org.springframework.stereotype.Service;
